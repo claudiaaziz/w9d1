@@ -4,6 +4,8 @@ import MovingObject from "./moving_object";
 window.MovingObject = MovingObject
 
 const game = document.getElementById("game-canvas");
+game.width = 1000;
+game.height = 1000;
 const ctx = game.getContext("2d")
 
   const mo = new MovingObject({
@@ -13,5 +15,5 @@ const ctx = game.getContext("2d")
     color: "#00FF00",
   });
 
-  window.mo
-  // window.mo.draw(ctx);
+
+ mo.draw(ctx);
